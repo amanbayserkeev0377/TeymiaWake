@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E73BEF0D2F0CE09A005DD264 /* TeymiaAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeymiaAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73BEF0D2F0CE09A005DD264 /* TeymiaWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeymiaWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E77A05D22F0CECC000FBF2CB /* Exceptions for "TeymiaWake" folder in "TeymiaWake" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E73BEF0C2F0CE09A005DD264 /* TeymiaWake */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E73BEF0F2F0CE09A005DD264 /* TeymiaAlarm */ = {
+		E73BEF0F2F0CE09A005DD264 /* TeymiaWake */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TeymiaAlarm;
+			exceptions = (
+				E77A05D22F0CECC000FBF2CB /* Exceptions for "TeymiaWake" folder in "TeymiaWake" target */,
+			);
+			path = TeymiaWake;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +45,7 @@
 		E73BEF042F0CE09A005DD264 = {
 			isa = PBXGroup;
 			children = (
-				E73BEF0F2F0CE09A005DD264 /* TeymiaAlarm */,
+				E73BEF0F2F0CE09A005DD264 /* TeymiaWake */,
 				E73BEF0E2F0CE09A005DD264 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +53,7 @@
 		E73BEF0E2F0CE09A005DD264 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E73BEF0D2F0CE09A005DD264 /* TeymiaAlarm.app */,
+				E73BEF0D2F0CE09A005DD264 /* TeymiaWake.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E73BEF0C2F0CE09A005DD264 /* TeymiaAlarm */ = {
+		E73BEF0C2F0CE09A005DD264 /* TeymiaWake */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E73BEF182F0CE09B005DD264 /* Build configuration list for PBXNativeTarget "TeymiaAlarm" */;
+			buildConfigurationList = E73BEF182F0CE09B005DD264 /* Build configuration list for PBXNativeTarget "TeymiaWake" */;
 			buildPhases = (
 				E73BEF092F0CE09A005DD264 /* Sources */,
 				E73BEF0A2F0CE09A005DD264 /* Frameworks */,
@@ -61,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E73BEF0F2F0CE09A005DD264 /* TeymiaAlarm */,
+				E73BEF0F2F0CE09A005DD264 /* TeymiaWake */,
 			);
-			name = TeymiaAlarm;
+			name = TeymiaWake;
 			packageProductDependencies = (
 			);
 			productName = TeymiaAlarm;
-			productReference = E73BEF0D2F0CE09A005DD264 /* TeymiaAlarm.app */;
+			productReference = E73BEF0D2F0CE09A005DD264 /* TeymiaWake.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,12 +98,13 @@
 					};
 				};
 			};
-			buildConfigurationList = E73BEF082F0CE09A005DD264 /* Build configuration list for PBXProject "TeymiaAlarm" */;
+			buildConfigurationList = E73BEF082F0CE09A005DD264 /* Build configuration list for PBXProject "TeymiaWake" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = E73BEF042F0CE09A005DD264;
 			minimizedProjectReferenceProxies = 1;
@@ -99,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E73BEF0C2F0CE09A005DD264 /* TeymiaAlarm */,
+				E73BEF0C2F0CE09A005DD264 /* TeymiaWake */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +199,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -242,6 +257,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -256,11 +272,15 @@
 				DEVELOPMENT_TEAM = SXCBCPV7Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeymiaWake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Teymia Wake";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,6 +289,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amanbayserkeev.TeymiaAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -288,11 +312,15 @@
 				DEVELOPMENT_TEAM = SXCBCPV7Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeymiaWake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Teymia Wake";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +329,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amanbayserkeev.TeymiaAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -313,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E73BEF082F0CE09A005DD264 /* Build configuration list for PBXProject "TeymiaAlarm" */ = {
+		E73BEF082F0CE09A005DD264 /* Build configuration list for PBXProject "TeymiaWake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E73BEF162F0CE09B005DD264 /* Debug */,
@@ -322,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E73BEF182F0CE09B005DD264 /* Build configuration list for PBXNativeTarget "TeymiaAlarm" */ = {
+		E73BEF182F0CE09B005DD264 /* Build configuration list for PBXNativeTarget "TeymiaWake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E73BEF192F0CE09B005DD264 /* Debug */,
